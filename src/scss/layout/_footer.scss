@@ -1,0 +1,16 @@
+.footer{
+    background-color: $darkGray;
+    .copyright{
+        color: $white;
+        text-align: center;
+    }
+
+    .nav{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    p{
+        margin: 0;
+    }
+}

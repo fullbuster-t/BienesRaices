@@ -1,0 +1,67 @@
+.no-webp .start{
+    background-image: url(../img/header.jpg);
+}
+
+.webp .start{
+    background-image: url(../img/header.webp);
+}
+
+.header{
+    background-color: $darkGray;
+    padding: 1rem 0 3rem 0;
+    &.start{
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet{
+            min-height: 55rem;
+        }
+
+        .header-content{
+            @include tablet{
+                min-height: 55rem;
+            }
+        }
+    }
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1{
+        text-align: left;
+        color: $white;
+        font-weight: $fontBold;
+        line-height: 1.5;
+    }
+}
+
+.superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .mobile-menu{
+        @include tablet{
+            display: none;
+        }
+        img{
+            width: 3rem;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .theme-icon{
+        img{
+            width: 3rem;
+            margin-left: 3rem;
+            filter: invert(100%);
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

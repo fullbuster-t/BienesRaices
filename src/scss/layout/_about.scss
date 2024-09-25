@@ -1,0 +1,12 @@
+.about-us{
+    @include tablet{
+        @include grid(2, 3rem);
+    }
+}
+
+.about-text blockquote{
+    font-weight: $fontBlack;
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+    padding-left: 1rem 0 3rem 0;
+}

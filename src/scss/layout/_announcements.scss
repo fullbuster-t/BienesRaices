@@ -1,0 +1,45 @@
+@include tablet{
+    .announcements-container{
+        @include grid(3, 3rem);
+    }
+}
+
+.announcement{
+    background-color: $gray;
+    border: 1px solid lighten($darkGray, 50);
+    margin-bottom: 3rem;
+    @include tablet{
+        margin-bottom: 0;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    .announcement-content{
+        padding: 2rem;
+    }
+    h3, p{
+        margin: 0;
+    }
+}
+
+.price{
+    color: $green;
+    font-weight: $fontBold;
+    font-size: 3rem;
+}
+
+.characteristics-icons{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+     max-width: 40rem;
+    li{
+        flex: 1;
+        display: flex;
+        img{
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+        }
+    }
+}

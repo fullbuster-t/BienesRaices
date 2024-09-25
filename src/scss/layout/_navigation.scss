@@ -1,0 +1,38 @@
+.bar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear;
+    @include tablet{
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+    a{
+        color: $white;
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        @include  tablet{
+            margin-right: 2rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.view-nav{
+    visibility: visible;
+    opacity: 1;
+}
